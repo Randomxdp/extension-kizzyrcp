@@ -2,9 +2,6 @@ package android.kizzyrcp;
 
 import lime.system.JNI;
 
-/**
- * @author Saw (M.A. Jigsaw)
- */
 class KizzyRCP
 {
 	private var kizzyRcpService:Dynamic;
@@ -65,7 +62,7 @@ class KizzyRCP
 	/**
 	 * The Activity state of Kizzy RCP.
 	 *
-	 * @param state the state.
+	 * @param state the activity state.
 	 */
 	public function setState(state:String):KizzyRCP
 	{
@@ -76,11 +73,11 @@ class KizzyRCP
 	/**
 	 * The Activity large image of Kizzy RCP.
 	 * 
-	 * How to get the Image ?
-	 * Upload image to any discord chat and copy its media link it should look like "https://media.discordapp.net/attachments/90202992002/xyz.png"
-	 * now just use the image link from attachments part so it would look like: setLargeImage("attachments/90202992002/xyz.png");
+	 * How to get the Image?
+	 * Upload image to any discord chat and copy its media link, it should look like "https://media.discordapp.net/attachments/90202992002/xyz.png"
+	 * now just use the image link from the attachments part so it would look like: setLargeImage("attachments/90202992002/xyz.png");
 	 *
-	 * @param image the image.
+	 * @param image the link for the image
 	 */
 	public function setLargeImage(image:String):KizzyRCP
 	{
@@ -89,13 +86,13 @@ class KizzyRCP
 	}
 
 	/**
-	 * The Activity large image of Kizzy RCP.
+	 * The Activity small image of Kizzy RCP.
 	 * 
-	 * How to get the Image ?
+	 * How to get the Image?
 	 * Upload image to any discord chat and copy its media link it should look like "https://media.discordapp.net/attachments/90202992002/xyz.png"
-	 * now just use the image link from attachments part so it would look like: setSmallImage("attachments/90202992002/xyz.png");
+	 * now just use the image link from the attachments part so it would look like: setSmallImage("attachments/90202992002/xyz.png");
 	 *
-	 * @param image the image.
+	 * @param image the link for the image.
 	 */
 	public function setSmallImage(image:String):KizzyRCP
 	{
@@ -106,7 +103,7 @@ class KizzyRCP
 	/**
 	 * The Activity types of Kizzy RCP.
 	 *
-	 * @param type the type that can be.
+	 * @param type the type that it can be.
 	 */
 	public function setType(type:KizzyActivityTypes):KizzyRCP
 	{
@@ -117,7 +114,7 @@ class KizzyRCP
 	/**
 	 * The Activity Status type on the profile of Kizzy RCP.
 	 *
-	 * @param status it can be online, idle, dnd.
+	 * @param status it can be online, idle, DND.
 	 */
 	public function setStatus(state:String):KizzyRCP
 	{
@@ -129,7 +126,7 @@ class KizzyRCP
 	 * The Activity Button 1 of Kizzy RCP.
 	 *
 	 * @param button_label the button label.
-	 * @param link the link that will redirect you to the respective site.
+	 * @param link the link to redirect you to the respective site.
 	 */
 	public function setButton1(button_label:String, link:String):KizzyRCP
 	{
@@ -138,10 +135,10 @@ class KizzyRCP
 	}
 
 	/**
-	 * The Activity Button 2 of Kizzy RCP.
+	 * The Secound Activity Button of Kizzy RCP.
 	 *
 	 * @param button_label the button label.
-	 * @param link the link that will redirect you to the respective site.
+	 * @param link the link to redirect you to the respective site.
 	 */
 	public function setButton2(button_label:String, link:String):KizzyRCP
 	{
@@ -170,5 +167,5 @@ abstract KizzyActivityTypes(Int) to Int from Int
 	public static final Streaming = 1;
 	public static final Listening = 2;
 	public static final Watching = 3;
-	public static final Competing = 5; // this was needed to be 4, why kizzy, WHY. -jigsaw
+	public static final Competing = 5; // it needed to be 4, why kizzy, WHY. -jigsaw
 }
