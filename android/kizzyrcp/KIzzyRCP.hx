@@ -2,6 +2,9 @@ package android.kizzyrcp;
 
 import lime.system.JNI;
 
+/**
+ * @author Saw (M.A. Jigsaw)
+ */
 class KizzyRCP
 {
 	private var kizzyRcpService:Dynamic;
