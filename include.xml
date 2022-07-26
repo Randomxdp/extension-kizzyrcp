@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<dependency name="kizzyrcp" path="dependencies/android" if="android" />
+
+	<android permission="android.permission.ACCESS_NETWORK_STATE"/>
+	<android permission="android.permission.INTERNET"/>
+</project>

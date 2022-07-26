@@ -1,0 +1,22 @@
+{
+  "name":"extension-kizzyrcp",
+  "url":"https://github.com/MAJigsaw77/extension-kizzyrcp",
+  "license":"MIT",
+  "tags":[
+    "android",
+    "lime",
+    "openfl",
+    "jni",
+    "kizzyrcp",
+    "haxe"
+  ],
+  "description":"A android extension that uses Kizzy RPC android library.",
+  "version":"1.0.0",
+  "releasenote":"First Release",
+  "contributors":[
+    "MAJigsaw77"
+  ],
+  "dependencies":{
+    "lime":"",
+  }
+}
